@@ -8,3 +8,6 @@ console.log(valueInNumber); // so sometime it will give a number format or the o
 let isloggedin = 1
 let booleanIsLoggesIn= Boolean(isloggedin)
 console.log(booleanIsLoggesIn) // when we use the empty string then it give false in boolean expression 
+console.log(1+2+"2");// so here we weill get 32 as output 
+console.log("1"+2+2); // but here we will get 122 as output because in echmascript there are several rules which are associated with the printing of the numbers and how it will be printed.
+// so we don;t have to dependant on these code or we can use parantesis for better understanding. 
