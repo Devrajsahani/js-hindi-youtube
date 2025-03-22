@@ -17,3 +17,4 @@ console.log(JsUser.mySym) // it will print the mysym but at the end it is not a 
 // there is another fucntion called freeze which can be used to lock the value and resist the vlaues to change
 // when ever we use back ticks `` it si known as string interpolation,and to add any values in between the lines ${} is used and inside it the elements are written, 
 // and it is not always required that we access the values just by . we also can use the [] bracket for accessing.
+// symbols are the important as well as unique value giving datatype which gives a unique value to the assignd value.
