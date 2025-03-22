@@ -12,3 +12,18 @@ if (true){
 console.log(a);
 
 // the concept of global and local here is so simple and same as always that the global value is written obuside the object whereas the local value is given in the object or inside any bracket.
+
+// nested scopes,
+function one(){
+    const username = "devraj"
+
+    function two(){
+        const website= "youtube"
+        console.log(username)
+    }
+    console.log(website)
+    two()
+
+}
+one()
+// now here the two can take the values from one fucntion as it si under that but the one can not take the vlaue as it is outside of it.
