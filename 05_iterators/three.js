@@ -10,5 +10,14 @@ for (const greet of greetings) {
     
 }
 // maps are known for unique entries and also all the values are in the way that they are written and 
-const map= new Map()
-map.
+// const map= new Map()
+// to destructure the array we can simply do the [key, value ] pair in the syntax
+const mygame= {
+    'game1':'NFS',
+    'game2':'spiderman'
+}
+for (const [key, value] of mygame) {
+    console.log(key,':-',value);
+    
+}
+// maps are iterable but the objects are not iterable;
