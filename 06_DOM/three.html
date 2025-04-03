@@ -11,14 +11,35 @@
     </ul>
     
 </body>
+<style>
+
+</style>
 <script>
     function addlanguage(langname){
         const li=document.createElement('li');
         li.innerHTML=`${langname}`
         document.querySelector('.language').
-        appendChild('li')
+        appendChild(li)
     }
     addlanguage("Python")
-    addlanguage("Rubyonrails")
+    addlanguage("Typescript")
+    
+    function addOptilanguage(langname){
+        const li= document.createElement('li')
+        li.appendChild(document.createTextNode(langname))
+        document.querySelector('.language').appendChild(li)
+
+    }
+    addOptilanguage('goland')
+    // edit
+    const secondlang = document.querySelector("li:nth-child(2)")
+    secondlang.innerHTML="mojo" // here the second element that is python is updated here,
+
+    // edit 
+    const secondlang=document.querySelector("li:first-child")
+    firstlang.outerHTML ='<li>Typescript</li>'
+
+
 </script>
 </html>
+<!-- here i have used two differnt ways of appending the elements in the list or the page so i can take both the values but the second one is more optimized and fast-->
