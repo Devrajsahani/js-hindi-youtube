@@ -19,26 +19,27 @@
    </div>
 </body>
 <script>
-    // document.getElementById('owl').onclick = function(){
-    //     alert("owl clicked")
-    // }
+        // document.getElementById('owl').onclick = function(){
+        // alert("owl clicked")
+        // }
 
      // attachEvent()
     // jQuery - on
-
+// jab bhi hum js mein event  ka use karenge toh code kaha aur kaise use ho rha hai jaise ki time stamp aur bahut saari chize vo yaha dii hui hai ek baar check kare lena 
     // type, timestamp, defaultPrevented
     // target, toElement, srcElement, currentTarget,
     // clientX, clientY, screenX, screenY
     // altkey, ctrlkey, shiftkey, keyCode
 
-    // document.getElementById('images').addEventListener('click', function(e){
-    //     console.log("clicked inside the ul");
-    // }, false)
+    document.getElementById('images').addEventListener('click', function(e){
+    console.log("clicked inside the ul");
+    }, false)
 
     // document.getElementById('owl').addEventListener('click', function(e){
     //     console.log("owl clicked");
     //     e.stopPropagation()
-    // }, false)
+    // }, false)\
+    // jab bhi koi bhi click event hota hai in this case pehle picture then ul then whole page toh vo ek series mein chalta hai pehle picture-ul-whole page isi process ko bubbling bolte hai 
     
     // document.getElementById('google').addEventListener('click',function(e){
     //     e.preventDefault();
@@ -61,3 +62,15 @@
     //removeIt.parentNode.removeChild(removeIt)
 </script>
 </html>
+
+
+
+<!-- concept of async code 
+ * js is synchronous like it goes from top to bottom and follows the same sequence throughtout the code 
+ * it si single threaded means it is slow than the other language butt it will not let us feel that it is slow.
+ * akele kabhi bhi js ka jiskra nahi hota hai ye sa a supportive and script runner language ki tarah use hota hai 
+ * and it works on a one line at a time and runs line by line, each operation waits for the last one to complete before executing
+ Blocking code and non blocking code
+ * block the flow of the program(read file sync) 
+ * does not block the execution(read file async)
+ * baki he explained about the flow of the code in the js search engine and also what is the sequence and how are the code being processed -->
