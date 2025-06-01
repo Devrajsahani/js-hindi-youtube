@@ -53,3 +53,8 @@ promiseFour.then((user)=>{
 })
 // here we are using the concept of the nested then functions in order to carry out all the things in a single promise.
 // finally is used to execute the code after the promise is either resolved or rejected.
+// fetch ke liye ek special queue banti hai jisme promise ko rakha jata hai and then it is executed after the current call stack is empty.
+// it is known as the microtask queue in the event loop. and sometimes it is also known as priorityy queue.
+// and there is also a task queue which is used to execute the promise after the current call stack is empty.
+// catch is used to handle the error in the promise and it will be executed if the promise is rejected.
+// finally is used to execute the code after the promise is either resolved or rejected.
